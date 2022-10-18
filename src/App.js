@@ -1,5 +1,4 @@
-import { Route,NavLink, Routes, BrowserRouter, Router } from 'react-router-dom';
-import Button from './components/button/Button';
+import { Route, Routes, BrowserRouter} from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 
