@@ -1,8 +1,10 @@
 import Icon from "../components/icon/Icon";
 import {AiOutlineSearch,AiOutlineBell} from 'react-icons/ai'
 import {BsChevronDown} from 'react-icons/bs'
-
+import LineChart from "../components/chart/LineChart";
 function Dashboard() {
+   
+
     return (
         <div className="bg-[#E5E5E5] h-screen">
             <div className="py-5 border-b bg-white border-b-slate-300 flex justify-between">
@@ -18,6 +20,9 @@ function Dashboard() {
                         </button>
                     </div>
                 </div>
+            </div>
+            <div>
+                <LineChart />
             </div>
         </div>
         )
