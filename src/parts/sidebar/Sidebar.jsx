@@ -12,7 +12,7 @@ import Navigation from '../../components/Navigation'
 
 export default function Sidebar() {
     return (
-        <div className="bg-[#081A51] h-screen sticky top-0 scrollbar scrollbar-thumb-gray-400 scrollbar-track-gray-100 scrollbar-w-2 scrollbar-thumb-rounded-lg">
+        <div className="bg-[#081A51] fixed left-0 lg:w-1/6 sm:w-5/12 md:w-4/12 h-screen top-0 scrollbar  scrollbar-thumb-gray-400 scrollbar-track-gray-100 scrollbar-w-2 scrollbar-thumb-rounded-lg">
             <div className="flex flex-col">
                 <div className="flex ml-4 pl-4 mt-6 gap-4">
                     <img src={logo} alt="" />
