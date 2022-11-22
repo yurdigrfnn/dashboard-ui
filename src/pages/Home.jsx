@@ -9,7 +9,7 @@ export default function Home() {
             <div className="lg:w-1/6 sm:w-5/12 md:w-4/12">
                 <Sidebar />
             </div>
-            <div className="lg:w-5/6 sm:w-7/12 md:w-8/12">
+            <div className="lg:w-5/6 sm:w-7/12 md:w-8/12 bg-[#E5E5E5]">
                 <Outlet />
             </div>
         </div>
