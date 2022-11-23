@@ -99,7 +99,8 @@ export default function Calendar() {
                 addEvent: {
                     text: 'Add Event',
                     click: function () {
-                        alert('clicked the custom button!');
+                        // add day event to calendar
+                        alert('Add Event');
                     },
                 },
                 cancleEvent: {
