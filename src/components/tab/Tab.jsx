@@ -20,12 +20,12 @@ const Tab = ({ children, active = 0 }) => {
   }, [children]);
 
   return (
-    <div className="">
-      <ul className="flex bg-[#F5F7FB] rounded-lg p-1">
+    <div className="bg-[#F5F7FB] rounded-lg p-1 w-min">
+      <ul className="flex">
         {tabsData.map(({ tab }, idx) => (
           <li className={`${idx === activeTab ? "bg-[#FFFFFF] text-[#017EFA] rounded-lg font-bold" : "text-[#A9ABB0]"}`}>
             <a
-              className='px-8  py-2 block text-base'
+              className='px-8 py-2 block text-base'
               href="#"
               onClick={() => setActiveTab(idx)}
             >

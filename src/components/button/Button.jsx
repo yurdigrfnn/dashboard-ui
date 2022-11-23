@@ -1,7 +1,7 @@
 
 
-export default function Button({name,className}){
+export default function Button({name,className,type,onClick}){
     return (
-        <button className={`inline-block py-1.5 px-4 text-sm focus:ring-1 focus:outline-none font-medium rounded-md ${className}`}>{name}</button>
+        <button type={type} onClick={onClick} className={`inline-block py-1.5 text-sm px-4 w-min focus:ring-1 focus:outline-none font-medium rounded-md ${className}`}>{name}</button>
     )
 }
