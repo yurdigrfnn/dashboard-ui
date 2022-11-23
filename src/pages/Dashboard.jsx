@@ -5,6 +5,7 @@ import {BsChevronDown,BsChevronBarRight} from 'react-icons/bs'
 import LineChart from "../components/chart/LineChart";
 import DonutChart from "../components/chart/DonutChart";
 import BarChart from '../components/chart/BarChart';
+import Calendar from '../components/calendar/Calendar';
 function Dashboard() {
    
 
@@ -52,8 +53,8 @@ function Dashboard() {
                     </div>
                     
                 </div>
-                <div className="bg-white w-[38%] mt-3 rounded-lg">
-                    <h1 className="text-2xl font-bold mt-3">Recent Activity</h1>
+                <div className="bg-white w-[38%] mt-3 rounded-lg px-2 py-2">
+                    <Calendar />
                 </div>  
             </div>
         </div>
