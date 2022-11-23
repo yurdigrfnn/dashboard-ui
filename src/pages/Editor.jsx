@@ -9,16 +9,16 @@ const Editor = () => {
     const [code, setCode] = useState([])
     const datas = JSON.stringify(code)
 
-    async function fetchFileContent() {
-        const response = await fetch('https://dummyjson.com/products/1');
+    async function fetchFileContent(value) {
+        const response = await fetch(value);
             const data = await response.json();
             console.log(data);
             setCode(data);
         }
         console.log(value);
     useEffect(() => {
-        fetchFileContent();
-    }, [])
+        fetchFileContent(value);
+    }, [value])
     return (
         <div>
             <div>
