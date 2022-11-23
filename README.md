@@ -1,6 +1,7 @@
 # Dashboard-Ui And Components
 
-Demo : [file link] (<https://dashboard-ui-lemon.vercel.app>)
+Demo : <https://dashboard-ui-lemon.vercel.app>.\
+
 you can use dashboard like chart
 
 ## Available Scripts
