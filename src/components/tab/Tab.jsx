@@ -4,6 +4,7 @@ const Tab = ({ children, active = 0 }) => {
   const [activeTab, setActiveTab] = useState(active);
   const [tabsData, setTabsData] = useState([]);
 
+
   useEffect(() => {
     let data = [];
 
@@ -23,10 +24,9 @@ const Tab = ({ children, active = 0 }) => {
     <div className="bg-[#F5F7FB] rounded-lg p-1 w-min">
       <ul className="flex">
         {tabsData.map(({ tab }, idx) => (
-          <li className={`${idx === activeTab ? "bg-[#FFFFFF] text-[#017EFA] rounded-lg font-bold" : "text-[#A9ABB0]"}`}>
+          <li className={`${idx === activeTab ? "bg-[#FFFFFF] text-[#017EFA] rounded-lg font-bold" : "text-[#A9ABB0]"} cursor-pointer`}>
             <a
               className='px-8 py-2 block text-base'
-              href="#"
               onClick={() => setActiveTab(idx)}
             >
               {tab}
@@ -34,8 +34,7 @@ const Tab = ({ children, active = 0 }) => {
           </li>
         ))}
       </ul>
-
-      <div className="">
+      <div className="rounded-lg mt-2 bg-white p-2">
         {tabsData[activeTab] && tabsData[activeTab].children}
       </div>
     </div>

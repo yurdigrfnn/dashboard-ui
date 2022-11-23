@@ -2,6 +2,7 @@
 import { Route, Routes, BrowserRouter} from 'react-router-dom';
 import Components from './pages/Components';
 import Dashboard from './pages/Dashboard';
+import Editor from './pages/Editor';
 import Home from './pages/Home';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
           <Route path='/' element={<Home />}>
             <Route index path='/' element={<Dashboard/>} />
             <Route path='components' element={<Components />}/>
+            <Route path='editor' element={<Editor />} />
             <Route path="inbox" element={<h1>Inbox</h1>} />
             <Route path='accounts' element={<h1>Accounts</h1>}/>
             <Route path='schedule' element={<h1>Schedule</h1>} />
