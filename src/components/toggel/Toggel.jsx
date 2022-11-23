@@ -1,22 +1,16 @@
-
-
-export default function Toggel({}){
+import { useState } from "react";
+const Toggel = ({checked,handleChange}) => {
+    
     return (
-        <div className="flex items-center justify-between">
-            <div className="flex items-center">
-                <div className="w-10 h-4 bg-[#E5E7EB] rounded-full p-1">
-                    <div className="w-2 h-2 bg-[#A9ABB0] rounded-full"></div>
-                </div>
-                <p className="text-[#A9ABB0] text-sm ml-2">Off</p>
+        // make switch using checkbox behavior and style it with tailwind css and make transition
+        <div className="flex items-center">
+            <div className="relative">
+                <input type="checkbox" className="sr-only" id="toggle-1" onChange={handleChange} checked={checked} />
+                <label htmlFor="toggle-1" className="block bg-gray-600 w-14 h-8 rounded-full"></label>
+                <label htmlFor="toggle-1" className={`dot absolute ${ !checked ? 'translate-x-1': 'translate-x-7'} top-1 bg-white w-6 h-6 rounded-full transition-all duration-500`}></label>
             </div>
-            <div className="flex items-center">
-                <p className="text-[#A9ABB0] text-sm mr-2">On</p>
-                <div className="w-10 h-4 bg-[#E5E7EB] rounded-full p-1">
-                    <div className="w-2 h-2 bg-[#A9ABB0] rounded-full"></div>
-                </div>
-            </div>
+            <div className="ml-3 text-gray-700 font-medium">{checked ? "On" : "Off"}</div>
         </div>
-        
-                
     )
 }
+export default Toggel
