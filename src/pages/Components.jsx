@@ -25,6 +25,10 @@ const tabContent = [
 
 export default function Components() {
     const [isOpen, setIsOpen] = useState(false)
+    const [checked, setChecked] = useState(false);
+    const handleChange = () => {
+        setChecked(!checked);
+    }
     return (
         <div className='h-screen'>
             <h1 className='mx-auto w-11/12 mt-10 font-bold text-3xl'>Components</h1>
@@ -63,7 +67,7 @@ export default function Components() {
                 <div>
                     {/* Switch(Toggel)*/}
                     <h1 className='mb-3 text-2xl'>Switch(Toggel)</h1>
-                    <Toggel />
+                    <Toggel checked={checked} handleChange={handleChange} />
                 </div>
             </div>
         </div>  
