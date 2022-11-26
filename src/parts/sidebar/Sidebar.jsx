@@ -24,6 +24,7 @@ export default function Sidebar() {
                 <Navigation name="Dashboard" icon={<AiOutlineDashboard className='inline-block text-2xl text-white' />} to="/" />
                 <Navigation name='Components' icon='' to='components' />
                 <Navigation name="inbox" icon={<AiOutlineInbox className='inline-block text-2xl text-white'/>} to="inbox" />
+                <Navigation name='Editor' icon='' to='editor' />
                 <div className='ml-4 pl-4'>
                     <h3 className='text-[#51CBFF] mb-3 text-xs font-medium mt-9'>Workspace</h3>
                 </div>

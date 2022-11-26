@@ -15,9 +15,12 @@ import DownloadButton from '../components/button/action-button/DownloadButton';
 const tabContent = [
     {
         title: "Daily",
+        content: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+
     },
     {
         title: "Weekly",
+        
     },
     {
         title: "Monthly",
